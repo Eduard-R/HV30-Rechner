@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HV30-Rechner</title>
     <link rel="stylesheet" href="main.css">
-    <script type="text/javascript" src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.25.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.25.0/locale/de.min.js"></script>
+    <script defer type="text/javascript" src="script.js"></script>
 </head>
 
 <body>
@@ -26,8 +28,8 @@
 
                 <input id="diag1" type="number" placeholder="Diagonale 1">
                 <input id="diag2" type="number" placeholder="Diagonale 2">
-                <button onclick="javascript: appendTR()">Berechnen</button>
-                <textarea name="resultarea" id="result-area" cols="10" rows="1"></textarea>
+                <button onclick="HVCalc()">Berechnen</button>
+            
 
             </div>
             <div class="result-area">
@@ -41,7 +43,9 @@
                         </tr>
                     </thead>
 
-                    <tbody id="tableData"></tbody>
+                    <tbody id="tableData">
+
+                    </tbody>
 
                 </table>
 
