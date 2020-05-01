@@ -22,3 +22,16 @@ td, th {
 tbody {
     color: rgb(0, 204, 255);
 }
+
+tbody tr:nth-child(odd) {
+    background-color: #525252;
+}
+
+tbody {
+    counter-reset: my-index;
+}
+
+tbody tr td:first-child::after {
+    counter-increment: my-index;
+    content: counter(my-index);
+}
