@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HV30-Rechner</title>
+    <link rel="stylesheet" href="main.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="headline">
+            <h1>HV30-Rechner</h1>
+            <p>
+                Zum Berechnen des HV30-Wertes bitte die gemessenen Diagonalen eingeben.
+            </p>
+
+        </div>
+    </header>
+    <main>
+        <div id="wrapper">
+            <div class="input-diag">
+
+                <input id="diag1" type="number" placeholder="Diagonale 1">
+                <input id="diag2" type="number" placeholder="Diagonale 2">
+                <button onclick="javascript: appendTR()">Berechnen</button>
+                <textarea name="resultarea" id="result-area" cols="10" rows="1"></textarea>
+
+            </div>
+            <div class="result-area">
+
+                <table id="result-table">
+                    <thead>
+                        <tr>
+                            <th>Nr.:</th>
+                            <th>Zeit</th>
+                            <th>Wert</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="tableData"></tbody>
+
+                </table>
+
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>
